@@ -26,3 +26,4 @@ function recordMedia() {
         }
     })
 }
+button.onclick=recordMedia
