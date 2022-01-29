@@ -1,5 +1,6 @@
 const button = document.querySelector('button'),
-    audio = document.querySelector('audio');
+    audio = document.querySelector('audio'),
+    a = document.querySelector('a');
 function recordMedia() {
     navigator.mediaDevices.getUserMedia({
         video: false,
