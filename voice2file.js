@@ -16,12 +16,12 @@ function recordMedia() {
         };
         recorder.onstop = function(){
             const blob = new Blob(chunks);
-            audio.src = URL.createObjectURL(blob);
+            a.href = audio.src = URL.createObjectURL(blob);
         }
         button.innerHTML = "Stop";
         button.onclick = function () {
             recorder.stop();
-            button.innerHTML = "Start"
+            button.innerHTML = "Start";
             button.onclick = recordMedia;
         }
     })
